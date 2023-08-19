@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif !important;
+}
+
+body {
+    width: 100% !important;
+    min-height: 100vh !important;
+    display: grid !important;
+    place-items: center !important;
+    background-color: #ededef !important;
+}
+
+.card-footer,
+.card-header {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+input {
+    color: #fff;
+    font-size: 0.9rem;
+    background-color: transparent;
+    width: 100%;
+    padding-inline: 0.5em;
+    padding-block: 0.7em;
+}
+
+.password-input-wrapper {
+    position: relative;
+}
+
+input:hover, input:focus {
+    outline: none !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.card-subheading, .form-p {
+    color: #858585;
+    font-size: 14px !important;
+}
+
+.card-heading {
+    font-weight: lighter;
+    font-size: 38px !important;
+    font-family: 'Pacifico', cursive !important;
+}
+
+@media screen and (max-width: 400px) {
+    input, input::placeholder, .card-link, .form-label {
+        font-size: 13px;
+    }
+}
+
+.password-svg svg {
+    color: #858585;
+    width: 24px;
+    height: 24px;
+}
+
+.password-svg {
+    position: absolute;
+    cursor: pointer;
+    top: 53%;
+    right: 10px;
+}
+
+.google-icon {
+    width: 25px;
+    height: 25px;
+    margin: 0 6px 0 0;
+}
+
+.error-message {
+    color: #f73939;
+    font-size: 16px;
+    margin: 0 0 1px 5px;
+}
+
+.error-icon {
+    color: #f73939;
+    width: 16px;
+    height: 16px;
+}
+
+.error-input:focus {
+    box-shadow: 0 0 0 0.25rem rgba(253, 13, 13, 0.25) !important;
+    border-color: #fe8686 !important;
+}
